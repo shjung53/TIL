@@ -1,4 +1,4 @@
-package varianceExample;
+package GenericExample;
 
 public class GenericExample2 {
     public static void main(String[] args) {
