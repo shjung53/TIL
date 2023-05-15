@@ -1,4 +1,4 @@
-package GenericExample;
+package genericExample;
 
 public class GenericExample {
 
