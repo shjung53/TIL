@@ -1,16 +1,13 @@
 package inlineExample
-
-
-fun add1(a: Int): Int {
-    return a + 3
-}
-
-inline fun add2(a: Int): Int {
-    return a + 3
+fun fooInline(action: () -> Unit) {
+    action()
+    println("fooInline")
 }
 
 fun main() {
+    fooInline { return@fooInline }
+}
+
+class A{
     val a = 3
-    print(add1(a))
-    print(add2(a))
 }
