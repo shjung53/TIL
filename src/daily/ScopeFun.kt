@@ -41,4 +41,8 @@ suspend fun main() {
                 }
         }
     }.join()
+
+    val a = listOf(listOf(23,42,2), listOf(2,3,5))
+    a.flatten()
+    a.flatMap { it.toList() }
 }
